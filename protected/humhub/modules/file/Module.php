@@ -22,11 +22,6 @@ class Module extends \humhub\components\Module
     public $isCoreModule = true;
 
     /**
-     * @inheritdoc
-     */
-    public $fileNameValidationPattern = '/[\x00-\x1F\x80-\xA0>\/\<"\':\*?|{}\[\]\\\\\/]/u';
-
-    /**
      * @see components\StorageManagerInterface
      * @var string storage manager class for files
      */

@@ -13,13 +13,11 @@ use yii\helpers\Html;
 ?>
 
 <a href="<?= $url ?>">
-    <div>
-        <img src="<?= $container->getProfileImage()->getUrl("", true); ?>"
-             width="50"
-             height="50"
-             alt=""
-             title="<?= Html::encode($container->displayName) ?>"
-             style="border-radius: 4px;"
-             border="0" hspace="0" vspace="0"/>
-    </div>
+    <img src="<?= $container->getProfileImage()->getUrl("", true); ?>"
+         width="50"
+         height="50"
+         alt=""
+         title="<?= Html::encode($container->displayName) ?>"
+         style="border-radius: 4px;"
+         border="0" hspace="0" vspace="0"/>
 </a>

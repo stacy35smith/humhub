@@ -91,7 +91,6 @@ class MailSummaryProcessor
      *
      * @param User $user
      * @param int $interval
-     * @return bool
      */
     protected static function checkUser(User $user, $interval)
     {

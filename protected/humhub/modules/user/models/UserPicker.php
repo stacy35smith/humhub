@@ -58,7 +58,9 @@ class UserPicker
         
         //If no initial query is given we use getFriends if friendship module is enabled otherwise all users
         if(!isset($cfg['query'])) {
-            $cfg['query'] = UserFilter::find();
+            $cfg['query'] = (Yii::$app->getModule('friendship')->getIsEnabled()) 
+                    ? Yii::$app->user->getIdentity()->getFriends()
+                    : UserFilter::find();
         }
         
         //Filter the initial query and disable user without the given permission

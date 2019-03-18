@@ -8,7 +8,6 @@
 
 namespace humhub\components;
 
-use Exception;
 use humhub\components\behaviors\PolymorphicRelation;
 use humhub\libs\Helpers;
 use humhub\modules\content\models\Content;
@@ -362,10 +361,8 @@ abstract class SocialActivity extends \yii\base\BaseObject implements rendering\
      *
      *  If no $content is provided the contentPreview of $source is returned.
      *
-     * @param ContentOwner $content
-     * @param int $maxLength
+     * @param Content $content
      * @return string|null
-     * @throws Exception
      */
     public function getContentPreview(ContentOwner $content = null, $maxLength = 25)
     {

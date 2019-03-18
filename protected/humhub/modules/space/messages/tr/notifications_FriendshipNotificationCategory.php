@@ -1,5 +1,5 @@
 <?php
 return array (
-  'Friendship' => 'Arkadaşlık',
+  'Friendship' => 'Dostluk',
   'Receive Notifications for Friendship Request and Approval events.' => '',
 );

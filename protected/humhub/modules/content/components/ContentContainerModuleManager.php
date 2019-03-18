@@ -37,7 +37,6 @@ class ContentContainerModuleManager extends \yii\base\Component
      *
      * @param string $id the module id
      * @return boolean
-     * @throws \yii\base\Exception
      */
     public function disable($id)
     {
@@ -59,7 +58,6 @@ class ContentContainerModuleManager extends \yii\base\Component
      *
      * @param string $id the module id
      * @return boolean
-     * @throws \yii\base\Exception
      */
     public function enable($id)
     {
@@ -145,7 +143,6 @@ class ContentContainerModuleManager extends \yii\base\Component
      * Returns an array of all available modules
      *
      * @return ContentContainerModule[] a list of modules
-     * @throws \yii\base\Exception
      */
     public function getAvailable()
     {
@@ -163,15 +160,6 @@ class ContentContainerModuleManager extends \yii\base\Component
         }
 
         return $this->_available;
-    }
-
-    /**
-     * Flushes the cache of available modules.
-     * @since 1.3.11
-     */
-    public function flushCache()
-    {
-        $this->_available = null;
     }
 
     /**

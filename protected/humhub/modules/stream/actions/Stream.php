@@ -284,7 +284,6 @@ abstract class Stream extends Action
      * @param $options array render options
      * @param boolean $partial whether or not to use renderPartial over renderAjax
      * @return string rendered wallentry
-     * @throws \Exception
      */
     public static function renderEntry(ContentActiveRecord $record, $options =  [], $partial = true)
     {
@@ -348,7 +347,7 @@ abstract class Stream extends Action
 
         $underlyingObject->populateRelation('content', $content);
 
-        $result['output'] = static::renderEntry($underlyingObject, false);
+        $result['output'] = self::renderEntry($underlyingObject, false);
         $result['pinned'] = (boolean) $content->pinned;
         $result['archived'] = (boolean) $content->archived;
         $result['guid'] = $content->guid;

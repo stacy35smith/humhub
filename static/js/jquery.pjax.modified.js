@@ -281,11 +281,6 @@ function pjax(options) {
     if (timeoutTimer)
       clearTimeout(timeoutTimer)
 
-    var contentDistribution = xhr.getResponseHeader('Content-Disposition');
-    if(contentDistribution && contentDistribution.indexOf('attachment') >= 0) {
-      options.error(xhr, textStatus);
-    }
-
     fire('pjax:complete', [xhr, textStatus, options])
 
     fire('pjax:end', [xhr, options])

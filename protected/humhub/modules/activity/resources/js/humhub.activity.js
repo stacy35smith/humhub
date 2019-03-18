@@ -54,6 +54,7 @@ humhub.module('activity', function (module, require, $) {
             initLoadCount: STREAM_INIT_COUNT,
             loadCount: STREAM_LOAD_COUNT,
             streamEntryClass: ActivityStreamEntry,
+
         });
     });
 

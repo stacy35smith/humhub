@@ -3,7 +3,7 @@ return array (
   '<strong>CronJob</strong> Status' => '<strong>CronJob</strong> Status',
   '<strong>Queue</strong> Status' => '<strong>Kø</strong> Status',
   'About HumHub' => 'Om Humhub',
-  'Background Jobs' => 'Bakgrunnsjobber',
+  'Background Jobs' => 'Bakgruns jobber',
   'Database' => 'Database',
   'Database migration results:' => 'Database migreringeresultater:',
   'Delayed' => 'Forsinket',
